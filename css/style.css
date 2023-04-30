@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/*---Header---*/
+body header {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    flex: 1 0 10%;
+    z-index: 100000;
+    position: fixed;
+}
+body #logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.9rem;
+    color: #D18213;
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    margin-left: 50px;
+    transition: 0.6s;
+}
+
+body #logo:hover {
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    flex: 6;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+}
+
+body header ul {
+    border: none;
+    margin: 0 0 0 0;
+    padding: 30px 0 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body header ul li {
+    list-style: none;
+}
+
+body header ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.6s;
+    font-family: 'Inter', sans-serif;
+    font-weight: 1.9rem;
+    letter-spacing: 1px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.checkbtn {
+    font-weight: 1.9rem;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+    margin: 40px 20px 40px 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---Container---*/
+main .container {
+    background: black;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-top: 80px;
+}
+
+main .container .img-porto {
+    flex: 1.5;
+    display: flex;
+}
+
+main .container .img-porto .mobileapp {
+    margin: auto;
+}
+
+main .container .wrapper {
+    flex: 1 1;
+}
+main .container .wrapper p {
+    color: white;
+    line-height: 3rem;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+main .container .wrapper button {
+    padding: .8rem 1.5rem;
+    margin-block-start: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif !important;
+    color: white;
+
+    border: 2px solid transparent;
+    border-radius: 40px;
+    background-color: #D18213;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+main .container .wrapper button:hover {
+    border: 2px solid #D18213;
+    color: #D18213;
+    background-color: transparent;
+}
+
+main .transition {
+    margin: 0;
+    background-image: url('../transition.jpg');
+    padding-top: 4em;
+    padding-bottom: 5rem;
+    width: 100%;
+    background-repeat: repeat-x;
+}
+
+/*---Feature---*/
+main .feature {
+    background: white;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin: 50px 80px 50px 80px;
+    gap: 2rem;
+}
+
+main .feature .feature-1,
+main .feature .feature-2,
+main .feature .feature-3 {
+    border: 3px solid #D18213;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #D18213;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    background-color: white;
+    font-size: 1.3em;
+    text-align: center;
+    transition: 0.4s;
+}
+
+main .feature .feature-1:hover,
+main .feature .feature-2:hover,
+main .feature .feature-3:hover {
+    transform: scale(1.1) ;
+    z-index: 2;
+}
+/*---Contact---*/
+main .contact {
+    margin: 50px 80px 50px 80px;
+    background-image: linear-gradient(to bottom left,#D18213,#662c00);
+    font-weight: bold ;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #D18213;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.3em;
+}
+
+main form input {
+    border-radius: 5px;
+}
+main .contact form textarea {
+    width: 100%;
+    height:60px;
+    outline: none;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px ;
+    max-height: 100px ;
+    margin-top: 5px;
+}
+
+textarea:is(:focus :valid) {
+    border-width: 2px;
+    padding: 14px;
+}
+
+main .contact form button {
+    padding: .5rem 1rem;
+    margin-block-start: 0.7rem;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif !important;
+    color: #D18213;
+
+    border: 2px solid transparent;
+    border-radius: 40px;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+main .contact form button:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+/*---About---*/
+main #about {
+    background-image: linear-gradient(to bottom left,#3B3B3B,#000000);
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin: 50px 80px 50px 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #D18213;
+    transition: 0.4s;
+}
+
+main #about:hover {
+    transform: scale(1.04);
+    z-index: 2;
+}
+
+main #about .about-me {
+    margin: 50px 80px 50px 80px;
+    font-weight: bold ;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.3em;
+    flex: 3 1;
+}
+main #about .profile-image {
+    flex: 1;
+    display: flex;
+}
+
+main #about .profile-image img {
+    margin: auto;
+    width:200px;
+    clip-path: circle();
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+    position: relative;
+}
+
+footer .logo-porto {
+    flex:1;
+}
+footer .referral {
+    color: white;
+    flex : 1 1;
+    text-align: right;
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    main .container,
+    main .feature {
+        flex-flow: column nowrap;
+    }
+    main #about .profile-image {
+        padding: 60px;
+    }
+    main #about .profile-image img {
+        width: 150px !important;
+    }
+    main #about .about-me {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .checkbtn {
+        display: block;
+    }
+    body header ul {
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    body header ul li {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    body header ul li a {
+        font-size: 20px !important;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}

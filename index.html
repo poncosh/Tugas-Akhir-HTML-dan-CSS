@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Porto Landing Page</title>
+ 
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  </head>
+  <body>
+    <header class="navbar">
+        <div class="title">
+          <a href="./index.html" id="logo">
+          PORTO
+          </a>
+        </div>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container" id="services">
+          <div class="img-porto">
+            <img src="./img/app-porto.png" alt="Porto Mobile" class="mobileapp" width="500">
+          </div>
+          <div class="wrapper">
+            <p>Kelola uangmu,<br>
+              bersama kami!
+            </p>
+            <button>Log in</button>
+            <button>Sign up</button>
+          </div>
+        </section>
+        <section class="transition">
+        </section>
+        <article class="feature">
+          <div class="feature-1">
+            <img src="./img/bank-icon.png" alt="Icon" class="featured-image" height="150">
+            <p>Bekerja sama dengan bank ternama di Indonesia</p>
+          </div>
+          <div class="feature-2">
+            <img src="./img/ojk-logo.png" alt="Icon" class="featured-image" height="150">
+            <p>Diawasi dan dikontrol oleh Otoritas Jasa Keuangan (OJK)</p>
+          </div>
+          <div class="feature-3">
+            <img src="./img/script.png" alt="Icon" class="featured-image" height="150">
+            <p>Memiliki expert terbaik dalam bidang ilmunya</p>
+          </div>
+        </article>
+        <section class="contact" id="contact">
+          <form action="" method="post">
+            Nama: <br><input type="text" id="name" style="width: 60%" /><br>
+            Email: <br><input type="email" id="email" style="width: 60%" /><br>
+            Saran & Masukan: <br><textarea placeholder="Ketik saranmu disini..."></textarea><br>
+            <button type="submit">Kirim</button>
+          </form>
+          <script>
+            const textarea = document.querySelector("textarea");
+            textarea.addEventListener("keyup", e => {
+              textarea.style.height = "60px";
+              let scHeight = e.target.scrollHeight;
+              textarea.style.height = `${scHeight}px`
+            });
+          </script>
+        </section>
+        <aside id="about">
+          <div class="profile-image">
+            <img src="./img/profile-image.jpeg" alt="Profile Image">
+          </div>
+          <div class="about-me">
+            <h2>Satrio Ponco Sushadi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat facere aliquid fugit a laboriosam, officia, nulla aliquam cumque fuga in rem ipsa incidunt, vel repudiandae odit nihil exercitationem totam.</p>
+          </div>
+        </aside>
+    </main>
+    <footer>
+      <div class="logo-porto">
+        <a href="./index.html" id="logo">
+          PORTO
+        </a>
+      </div>
+      <div class="referral">
+        <h3>Alamat</h3>
+        <p>
+          Jl. Rasuna Said No. 69<br>
+          Jakarta Selatan<br>
+          DKI Jakarta
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
